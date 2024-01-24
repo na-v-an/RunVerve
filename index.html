@@ -1,0 +1,315 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <!-- <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet"> -->
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+
+    
+    <!-- <script src="script.js"></script> -->
+    <title>RunVerve</title>
+</head>
+<body>
+  <!---------------- NAVBAR ---------------->
+    <nav class="navbar">
+        <ul>
+            <li class="logo"><a href="#"><img src="assets/logo.png" alt="logo"></a></li>
+            <li class="logotext"><a href="#"><span>RUN VERVE</span></a></li>
+            <li class="navb"><a href="#about">About</a></li>
+            <li class="navb"><a href="#features">Features</a></li>
+            <li class="navb"><a href="#users">Users</a></li>
+            <li class="navb"><a href="#coach">Verve Coach</a></li>
+            <li class="navb"><a href="#contact">Contact us</a></li>
+            <li><button class="login"><a href="#">Login</a></button></li>
+        </ul>
+    </nav>
+  <!---------------- NAVBAR ---------------->
+    <!---------------- JS FOR SCROLLING  ---------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('a[href^="#"]').on('click', function(event) {
+              event.preventDefault();
+  
+              var target = this.hash;
+              var $target = $(target);
+  
+              $('html, body').animate({
+                  'scrollTop': $target.offset().top
+              }, 500, 'swing');
+          });
+      });
+    </script>
+    <!---------------- RUN VERVE LANDING SCREEN ---------------->
+    <div class="container-a">
+        <div class="main">
+            <span>RUN VERVE<br></span>
+            <span>Beyond pace and miles. RunVerve's <br>
+                coach whispers wisdom to your <br>
+                digital twin's soul. </span>
+            <button class="getstarted">Get Started</button>
+        </div>
+        <div class="main-img">
+            <img class="main-img-run" src="assets/gifs/Untitled design.gif" alt="">
+        </div>
+    </div>
+    <!---------------- INF CAROUSEL  ---------------->
+    <div class="owl-carousel owl-theme owl-loaded owl-drag">
+            
+      <div class="owl-stage-outer">
+        
+        <div class="owl-stage">
+          
+          <div class="owl-item">
+            <img src="assets/Advice1.png" alt="Advice1">
+          </div>
+        
+          <div class="owl-item">
+            <img src="assets/Advice2.png" alt="Advice2">
+          </div>
+          <div class="owl-item">
+            <img src="assets/Advice3.png" alt="Advice3">
+          </div>
+          <div class="owl-item">
+            <img src="assets/Advice4.png" alt="Advice4">
+          </div>
+          <div class="owl-item">
+            <img src="assets/Advice5.png" alt="Advice1">
+          </div>
+          <div class="owl-item">
+            <img src="assets/Advice6.png" alt="Advice1">
+          </div>
+
+          </div>
+      </div>
+  </div>
+  <!---------------- SCRIPTS for autoslider ---------------->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+
+  <script>
+    $(document).ready(function() {
+        $('.owl-carousel').owlCarousel({
+            items: 4,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true
+        });
+    });
+  </script>
+  <!---------------- ABOUT US ----------------> 
+    <div class="container-b" id="about">
+        <div class="main">
+            <p class="about"><strong>About us</strong><br><br>
+                RunVerve is a data-driven digital twin <br>
+                based Verve Coach ecosystem that <br>
+                helps runners achieve their true <br>
+                potential. </p>
+        </div>
+        <div class="main-img">
+            <img class="main-img-run" src="assets/gifs/Video.Guru_20240122_160808959.gif" alt="bro" style="width: 540px; height: 454px;">
+            <!-- <hr class="horizontal-line" style="border: 2px solid rgba(0, 0, 0, 0.253); margin: 0 0 0 80px; width: 400px;"> -->
+        </div>
+    
+    </div>
+    <!---------------- FEATURES ---------------->
+    <div class="container-c" id="features">
+        <span>Features</span>
+    </div>
+    <div class="container" style="padding: 0;">  
+      <div uk-slider="center: true">
+    
+        <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1">
+    
+          <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-3@l uk-child-width-1-3@m uk-grid">
+            <li>
+                <div class="box-container">
+                  <div class="card">
+                    <div class="pic"><img src="assets/coach.png" alt="picture"/></div>
+                    <div class="content">
+                      <h3 class="title">Run Verve <br> Coach</h3>
+                      <span>Real-time feedback <br>
+                            Goal adjustments <br>
+                            Tailored advice </span>
+                    </div>
+                  </div>
+                </div>
+            </li>
+            <li>
+                <div class="box-container">
+                  <div class="card">
+                    <div class="pic"><img src="assets/insights.png" alt="picture" style="width: 90px;"/></div>
+                    <div class="content">
+                      <h3 class="title">Data-Driven Insights</h3>
+                      <span>Track progress <br>
+                            Analyze performace <br>
+                            Unlock improvement </span>
+                    </div>
+                  </div>
+                </div>
+            </li>
+            <li>
+                <div class="box-container">
+                  <div class="card">
+                    <div class="pic"><img src="assets/Leaderboard.png" alt="picture" style="margin: 15px 0 0 0;"/></div>
+                    <div class="content">
+                      <h3 class="title">Smart leaderboards</h3>
+                      <span>Stay motivated <br>
+                            Compete with peers <br>
+                            Celebrate milestones </span>
+                    </div>
+                  </div>
+                </div>
+            </li>
+            <li>
+                <div class="box-container">
+                  <div class="card">
+                    <div class="pic"><img src="assets/reward.png" alt="picture"/></div>
+                    <div class="content">
+                      <h3 class="title">Gamified Rewards</h3>
+                      <span>Earn Sparks, redeem <br>
+                            for content, <br>
+                            products, discounts. </span>
+                    </div>
+                  </div>
+                </div>
+            </li>
+            <li>
+                <div class="box-container">
+                  <div class="card">
+                    <div class="pic"><img src="assets/personalized.png" alt="picture"/></div>
+                    <div class="content">
+                      <h3 class="title">Personalized<br>Recommendations</h3>
+                      <span>Content-gear-nutrition <br>
+                            aligned with your needs </span>
+                    </div>
+                  </div>
+                </div>
+            </li>
+            <li>
+                <div class="box-container">
+                  <div class="card">
+                    <div class="pic"><img src="assets/Social.png" alt="picture" style="margin-top: 28px;"/></div>
+                    <div class="content">
+                      <h3 class="title">Social Connections</h3>
+                      <span>Share experiences <br>
+                            Find running buddies <br>
+                            Build a community. </span>
+                    </div>
+                  </div>
+                </div>
+            </li>
+            
+            <!-- Add similar li elements for other cards -->
+          </ul>
+    
+          <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+          <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    
+        </div>
+    
+        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+    
+      </div>
+    </div>
+  <!---------------- RECEIVE PERSONALIZED RECOMMENDATIONS ---------------->
+  <div class="advice" id="users">
+    <p>Receive personalized recommendations from <b>Verve Coach</b>, and access <br> 
+       a <b>digital twin</b> that replicates your running profile, helping you make <br>
+       data-driven decisions at your fingertips</p>
+    <div class="content-wrapper">
+      <div class="phone">
+        <img src="assets/phone2.png" alt="phone1" class="img1">
+        <img src="assets/phone1.png" alt="phone2" class="img2">
+      </div>
+      <div class="messages">
+        <p class="top">Ask any of your question <br>
+          and get tailored advice</p>
+        <p class="bubble">Give me a running goal for today</p>
+        <p class="bubble">What is the most effective way to <br>
+                          improve my running form and <br>
+                          prevent injuries?</p>
+        <p class="bubble">Can you help me design a training <br>
+                          that aligns with my fitness <br>
+                          goals and current level of running <br>
+                          experience?</p>
+        <p class="bubble">How can I effectively recover after <br>
+                          long runs or intense training <br>
+                          sessions?</p>
+        <p class="bubble">Are there specific nutrition <br>
+                          guidelines I should follow to <br>
+                          support my running performance?</p>
+        <p class="bubble">I've been struggling with a recurring <br>
+                          injury. Can you help me identify <br>
+                          the root cause and suggest <br>
+                          strategies to prevent it?</p>
+      </div>
+    </div>
+  </div>
+  <!---------------- EMPOWERING RUNNERS WITH DATA ---------------->
+  <div class="container-d" id="coach">
+    <div class="data">
+      <h1>Empowering Runners with Data</h1>
+      <p>RunVerve unlocks the true potential of your <br>
+         running journey by tapping into the <br> 
+         underutilized data from your activities. We <br>
+         transform raw data into actionable insights, <br> 
+         providing a personalized virtual coach and <br>
+         digital twin. Embrace a future where your data <br>
+         isn't just collected but empowers you on every <br>
+         stride.</p>
+    </div>
+    <div class="data-img">
+         <img src="assets/gifs/datagif.gif" alt="data-img">
+    </div>
+  </div>
+  <!---------------- CONTACT US ---------------->
+  <div class="container-e" id="contact">
+    <div class="contact">
+          <img src="assets/logo.png" alt="logo">
+          <span>RUN VERVE</span><br><br>
+          <p>
+          Beyond pace and miles. RunVerve's coach <br>
+          whispers wisdom to your digital twin's soul. 
+          <hr class="horizontal-line" style="border: 1px solid black; margin: 24px 0 26px 0;">
+          <sub>@2024 All Rights Reserved</sub>
+          <ul>
+            <li><img src="assets/mail.svg" alt="mail">teamrunverve@gmail.com</li>
+            <li><img src="assets/instagram.svg" alt="instagram">https://www.instagram.com/runverve </li>
+            <li><img src="assets/linkedin_svgrepo.svg" alt="linkedin">https://www.linkedin.com/company/runverve</li>
+          </ul>
+          </p>
+          <p class="pol">Privacy Policy<span style="margin-right: 30px; font-size: 16px;">Terms of Use</span></p>
+    </div>
+    <div class="contact-form">
+        <h2 style="font-family: 'Roboto'; font-size: 32px; font-weight: 700;">Contact us</h2>
+        <form action="#" method="post">
+          <input type="text" id="name" name="name" placeholder="Name" required>
+
+          <input type="email" id="email" name="email" placeholder="Email" required>
+
+          <input type="tel" id="phone" name="phone" placeholder="Name" required>
+
+          <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+
+          <div class="send"><button type="submit">Send</button></div>
+      </form>
+    </div>
+</div>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+      <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+      
+    
+</body>
+</html>
