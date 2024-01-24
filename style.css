@@ -304,15 +304,13 @@ p {
         display: flex;
         justify-content: space-between;
         margin: 0;
+        height: 1140px;
     }
     .advice .content-wrapper .phone {
         margin-left: 120px;
     }
     .advice .content-wrapper .phone .img1 {
-        margin-top: 360px;
-    }
-    .advice .content-wrapper .phone .img2 {
-        margin-top: 200px;
+        margin-top: 330px;
     }
     .advice .content-wrapper .messages {
         margin: 230px 160px 0 0;
@@ -323,13 +321,36 @@ p {
         margin-bottom: 50px;
     }
     .advice .content-wrapper .messages .bubble {
-        background-color: #006F2C;
+        background-color: #C2FFC3;
         margin-bottom: 20px;
         font-size: 16px;
-        color: white;
+        color: black;
         padding: 16px;
         border-radius: 24px 24px 0 24px;
     }
+    .advice .messages p.top {
+        display: block;
+    }
+    .advice .messages p {
+        display: none;
+    }
+    .advice .messages p.active {
+        display: flex;
+        align-items: self-start;
+        justify-content: center;
+        opacity: 0;
+        animation: fadeInAndGrow 1s ease-out forwards;
+    }
+
+    @keyframes fadeInAndGrow {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
     /* ---------------- EMPOWERING RUNNERS WITH DATA ---------------- */
     .container-d {
         display: flex;
