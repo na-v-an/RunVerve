@@ -8,7 +8,10 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <!-- <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet"> -->
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
 
@@ -32,7 +35,7 @@
     </nav>
   <!---------------- NAVBAR ---------------->
     <!---------------- JS FOR SCROLLING  ---------------->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
     <script>
       $(document).ready(function() {
           $('a[href^="#"]').on('click', function(event) {
@@ -91,8 +94,8 @@
       </div>
   </div>
   <!---------------- SCRIPTS for autoslider ---------------->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script> -->
 
   <script>
     $(document).ready(function() {
@@ -228,8 +231,8 @@
        data-driven decisions at your fingertips</p>
     <div class="content-wrapper">
       <div class="phone">
-        <img src="assets/phone2.png" alt="phone1" class="img1">
-        <img src="assets/phone1.png" alt="phone2" class="img2">
+        <img src="assets/gifs/Phone jump.gif" alt="phone1" class="img1">
+ 
       </div>
       <div class="messages">
         <p class="top">Ask any of your question <br>
@@ -255,6 +258,38 @@
       </div>
     </div>
   </div>
+  <script>
+    $(document).ready(function() {
+        function animateMessages() {
+            var messages = $('.advice .messages p.bubble');
+            var delay = 3000;
+            var index = 0;
+
+            function showNextMessage() {
+                messages.eq(index).addClass('active');
+                index++;
+
+                if (index === messages.length +1) {
+                    // All messages displayed, reset index and delay before starting again
+                    index = 0;
+                    messages.removeClass('active');
+                    setTimeout(showNextMessage, delay);
+                } else {
+                    // Set the timeout for the next message
+                    setTimeout(showNextMessage, delay);
+                }
+            }
+
+            // Start the animation
+            showNextMessage();
+        }
+
+        // Call the function to start the animation
+        animateMessages();
+    });
+</script>
+  
+
   <!---------------- EMPOWERING RUNNERS WITH DATA ---------------->
   <div class="container-d" id="coach">
     <div class="data">
@@ -306,9 +341,9 @@
     </div>
 </div>
       <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-      <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
+      <!-- <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script> -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script> -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script> -->
       
     
 </body>
