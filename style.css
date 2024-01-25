@@ -469,19 +469,220 @@ p {
     body {
         width: 100%;
     }
+
     .navbar {
-        flex-direction: column; /* Stack items vertically for smaller screens */
+        flex-direction: column;
         align-items: center;
     }
 
     .navbar ul {
-        flex-direction: column; /* Stack items vertically for smaller screens */
+        flex-direction: column;
         text-align: center;
     }
 
     .navbar a {
-        margin: 10px 0; /* Add spacing between navigation items */
+        margin: 10px 0;
     }
 
-    
+    .logo {
+        margin: 10px 0;
+    }
+
+    .logotext {
+        margin: 10px 0;
+    }
+
+    .navb {
+        margin: 10px 0;
+    }
+
+    .login {
+        margin: 10px 0;
+    }
+
+    .container-a {
+        flex-direction: column;
+    }
+
+    .main {
+        margin: 50px 20px;
+    }
+
+    .main-img {
+        margin-top: 20px;
+    }
+
+    .main-img-run {
+        width: 100%;
+        height: auto;
+    }
+
+    .getstarted {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .container-b {
+        margin-top: 50px;
+        padding-left: 20px;
+        padding-bottom: 100px;
+    }
+
+    .about strong {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .container-c {
+        margin: 20px 0;
+        font-size: 36px;
+    }
+
+    .container {
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .box-container .card {
+        width: 100%;
+        margin: 0;
+    }
+
+    .box-container .card .pic {
+        margin-top: 20px;
+    }
+
+    .content {
+        margin-top: 20px;
+    }
+
+    .advice {
+        margin: 50px 0;
+    }
+
+    .advice p {
+        font-size: 24px;
+    }
+
+    .advice .content-wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .advice .content-wrapper .phone {
+        margin-left: 0;
+    }
+
+    .advice .content-wrapper .phone .img1 {
+        margin-top: 20px;
+    }
+
+    .advice .content-wrapper .messages {
+        margin: 20px 0;
+    }
+
+    .advice .content-wrapper .messages .top {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .advice .content-wrapper .messages .bubble {
+        font-size: 14px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .container-d {
+        margin: 20px 20px 50px 20px;
+    }
+
+    .data {
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .data-img {
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .data-img img {
+        margin-left: 0;
+    }
+
+    .data p {
+        font-family: sans-serif;
+    }
+
+    .container-e {
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact {
+        margin: 20px 20px 50px 20px;
+        padding-top: 20px;
+    }
+
+    .container-e .contact img {
+        height: 36px;
+        width: 70px;
+    }
+
+    .container-e .contact span {
+        font-size: 24px;
+    }
+
+    .container-e .contact p {
+        margin: 0;
+    }
+
+    .container-e .contact hr {
+        margin-bottom: 20px;
+    }
+
+    .container-e .contact ul {
+        margin-top: 20px;
+    }
+
+    .container-e .contact ul li {
+        font-size: 14px;
+    }
+
+    .container-e .contact ul li img {
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    .pol {
+        padding-top: 30px;
+        font-size: 14px;
+    }
+
+    .pol span {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+
+    .contact-form {
+        width: 100%;
+        margin: 20px 0;
+        padding: 20px 0;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+
+    .send {
+        justify-content: center;
+    }
 }
