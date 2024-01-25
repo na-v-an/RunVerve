@@ -9,10 +9,13 @@ body {
     justify-content: space-between;
     background-color: black;
     z-index: 100;
+    width: 100%;
 }
 .navbar ul {
     display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .navbar a {
     text-decoration: none;
@@ -467,7 +470,16 @@ p {
         width: 100%;
     }
     .navbar {
-        width: 100%;
+        flex-direction: column; /* Stack items vertically for smaller screens */
+        align-items: center;
+    }
+    .navbar ul {
+        flex-direction: column; /* Stack items vertically for smaller screens */
+        text-align: center;
+    }
+
+    .navbar a {
+        margin: 10px 0; /* Add spacing between navigation items */
     }
     .container-a {
         flex-direction: column;
@@ -485,7 +497,6 @@ p {
         font-weight: bold;
         margin-bottom: 20px;
     }
-    
     
     
     .main-img {
