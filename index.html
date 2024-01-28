@@ -31,9 +31,42 @@
             <li class="navb"><a href="#coach">Verve Coach</a></li>
             <li class="navb"><a href="#contact">Contact us</a></li>
             <li><button class="login"><a href="#">Login</a></button></li>
+            <li>
+              <a href="#" class="toggle-button" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </a>
+            </li>
         </ul>
+        <div class="nav-ul">
+          <ul>
+            <li class="navb"><a href="#about">About</a></li>
+            <li class="navb"><a href="#features">Features</a></li>
+            <li class="navb"><a href="#users">Users</a></li>
+            <li class="navb"><a href="#coach">Verve Coach</a></li>
+            <li class="navb"><a href="#contact">Contact us</a></li>
+            <li><button class="login"><a href="#">Login</a></button></li>
+          </ul>
+        </div>
     </nav>
   <!---------------- NAVBAR ---------------->
+  <script>
+    function toggleMenu() {
+      var navUl = document.querySelector('.nav-ul');
+      navUl.classList.toggle('active')
+    }
+  </script>
+  <!-- <script>
+    document.addEventListener('DOMContentLoaded',function() {
+      const toggleButton = document.querySelector('.toggle-button');
+      const navUl = document.querySelector('.nav-ul');
+
+      toggleButton.addEventListener('click', function () {
+        navUl.style.display = (navUl.style.display == 'block') ? 'none' : 'block';
+      });
+    });
+  </script> -->
     <!---------------- JS FOR SCROLLING ON CLICK NAV ---------------->
 
     <script>
@@ -100,16 +133,75 @@
 
   <script>
     $(document).ready(function() {
-        $('.owl-carousel').owlCarousel({
-            items: 4,
+        function setCarouselItems() {
+            var items
+            // var items = $(window).width()
+            if ($(window).width() < 376) {
+              items = 1
+            }
+            if ($(window).width() < 426) {
+              items = 2 
+            }else {
+              items = 4
+            }
+            console.log($(window).width())
+            console.log(items)
+
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                items: items
+            });
+            $(window).resize(function() {
+        if ($(window).width() < 376) {
+            items = 1;
+        } else if ($(window).width() < 769) {
+            items = 3;
+        } else if ($(window).width() < 2560){
+            items = 4;
+        }
+
+        console.log($(window).width());
+        console.log(items);
+
+        // Destroy the existing carousel and reinitialize with the new number of items
+        $('.owl-carousel').trigger('destroy.owl.carousel').owlCarousel({
             loop: true,
             margin: 10,
             autoplay: true,
             autoplayTimeout: 3000,
-            autoplayHoverPause: true
+            autoplayHoverPause: true,
+            items: items
         });
     });
+        }
+
+        // Call the function when the document is ready
+        setCarouselItems();
+
+        // Update the number of items on window resize
+        $(window).resize(function() {
+            setCarouselItems();
+        });
+     });
   </script>
+  <!-- <script>
+    $(document).ready(function() {
+      var items = window.innerWidth < 426 ? 2 : 4;
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            items: items
+            // ADD if condition
+        });
+    });
+  </script> -->
   <!---------------- ABOUT US ----------------> 
     <div class="container-b" id="about">
         <div class="main">
@@ -230,14 +322,20 @@
     <p>Receive personalized recommendations from <b>Verve Coach</b>, and access <br> 
        a <b>digital twin</b> that replicates your running profile, helping you make <br>
        data-driven decisions at your fingertips</p>
+    <div class="top">
+      <p>Ask any of your questions <br>
+                     and get tailored advice</p>
+    </div>
     <div class="content-wrapper">
       <div class="phone">
         <img src="assets/gifs/Phone jump.gif" alt="phone1" class="img1">
- 
+        <div class="ask" style="display: none;">Ask any of your questions <br>
+          and get tailored advice
+        </div>
       </div>
+
       <div class="messages">
-        <p class="top">Ask any of your question <br>
-          and get tailored advice</p>
+
         <p class="bubble">Give me a running goal for today</p>
         <p class="bubble">What is the most effective way to <br>
                           improve my running form and <br>
@@ -307,7 +405,8 @@
          on every stride.</p>
     </div>
     <div class="data-img">
-         <img src="assets/gifs/datagif.gif" alt="data-img">
+      <h1 style="display: none;">Runners with Data</h1>
+      <img src="assets/gifs/datagif.gif" alt="data-img">
     </div>
   </div>
   <!---------------- CONTACT US ---------------->
