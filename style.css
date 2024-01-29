@@ -869,7 +869,10 @@ p {
         display: flex;
         margin: 20px 0 0px 30px;
     }
-    .navb , .login , .logo {
+    .logo {
+        margin: 20px 0 0 0;
+    }
+    .navb , .login {
         display: none;
         flex-direction: column;
         align-items: flex-start;
