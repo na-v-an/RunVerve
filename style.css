@@ -1096,3 +1096,226 @@ p {
         margin: 20px;
     }
 }
+
+
+/* ---------------- SCEEN WIDTH 320 MAX ---------------- */
+
+@media (max-width: 320px) {
+    body {
+        width: 320px;
+    }
+    .navbar {
+        width: 320px;
+    }
+    .logotext {
+        font-size: 24px;
+    }
+    .navb , .login , .logo {
+        display: none;
+    }
+    .nav-ul {
+        display: none;
+    }
+    .nav-ul.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        text-align: center;
+    }
+    .toggle-button {
+        width: 26px;
+        height: 18px;
+        top: 1.75rem;
+    }
+    .toggle-button .bar {
+        height: 2px;
+    }
+    /* ---------------- LOGO ---------------- */
+    
+/* ---------------- HOME SCREEN START ---------------- */
+    .main {
+        font-size: 14px;
+    }
+
+    .main span:first-child {
+        font-size: 24px;
+    }
+    .main span {
+        margin: 0 40px 20px 0;
+    }
+    .getstarted {
+        width: 120px;
+        height: 40px;
+        font-weight: 600;
+        margin: 20px 0 0 45px;
+    }
+    /* ---------------- ABOUT US ---------------- */
+
+    .container-b {
+        margin: 100px 0 0 0;
+    }
+    .about strong {
+        font-size: 24px;
+    }
+    .about {
+        font-size: 14px;
+    }
+    p {
+        width: auto;
+        margin-left: -10px;
+        
+    }
+    .main-img1 img {
+        width: auto; 
+        height: auto;
+        margin: 0;
+    }
+    /* ---------------- FEATURES ---------------- */
+    .container-c {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    /* ---------------- CAROUSEL CARDS ---------------- */
+
+    .container {
+        height: 440px;
+    } 
+    
+    .box-container .card {
+      position: relative;
+      width: 220px;
+      height: 320px;
+    }
+    .box-container .card .content .title {
+        font-size: 24px;
+    }
+    .box-container .card .content span {
+        font-size: 14px !important;
+    }
+    /* ---------------- RECEIVE PERSONALIZED RECOMMENDATIONS ---------------- */
+
+    .advice {
+        display: block;
+        margin: 40px 35px 0 35px;
+    }
+    .advice p {
+        font-size: 14px;
+    }
+    .advice .content-wrapper {
+        height: 1000px;
+    }
+    .advice .content-wrapper .phone .img1 {
+        margin: 100px 0 0 0;
+        width: 320px;
+    }
+    .advice .content-wrapper .messages {
+        margin: 0px 0 0 -18px;
+        padding: 20px 0;
+    }
+    .advice .top {
+        display: none;
+    }
+    .advice .content-wrapper .messages .bubble {
+        margin: 0 15px 20px 10px;
+        font-size: 12px;
+        padding: 6px;
+    }
+    .ask {
+        margin:80px 0 0 0;
+    }
+    /* ---------------- RUNNERS WITH DATA ---------------- */
+    .container-d {
+        width: 320px;
+    }
+    .data {
+        margin: 20px; 
+    }
+    
+    .data-img {
+        margin: 100px 0 0 0;
+        text-align: left;
+    }
+    .data-img h1 {
+        font-size: 24px;
+        margin: 0 0 40px 60px;
+    }
+    .data-img img {
+        width: 300px;
+        height: 300px;
+    }
+    .data p {
+        font-size: 14px;
+        margin: 40px 0 120px 20px;
+    }
+
+    /* ---------------- CONTACT US ---------------- */
+    .container-e {
+        flex-direction: column;
+    }
+
+    .contact {
+        margin: 0;
+        padding-top: 40px;
+        /* order: 1; */
+    }
+    .container-e .contact img {
+        height: 40px;
+        width: 60px;
+        margin: 0 0 0 40px;
+    }
+    .container-e .contact span {
+        font-size: 24px;
+    }
+    .container-e .contact p {
+        margin: 0 0 0 50px; 
+        font-size: 12px;
+    }
+    .container-e sub {
+        margin: 0 0 0 50px;
+        font-size: 8px;
+    }
+    .container-e .contact hr {
+        width: 90%;
+    }
+    .container-e .contact ul {
+        margin: 20px;
+    }
+    .container-e .contact ul li {
+        font-size: 12px;
+    }
+    .container-e .contact ul li img {
+        height: 20px;
+        width: 20px;
+        margin: 0 10px 0 0;
+    }
+    .pol {
+        padding-top: 20px;
+    }
+    .pol span {
+        font-size: 12px !important;
+    }
+    /* ---------------- CONTACT FORM ---------------- */
+
+    .contact-form {
+        flex-direction: column;
+        width: 370px;
+        height: 360px !important;
+        padding: 40px 0 0 0;
+        margin: 60px 0 20px 0;
+    }
+    .contact-form h2 {
+        font-size: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 280px;
+        margin: 0 0 15px 46px;
+    }
+    .contact-form button {
+        margin: 20px;
+    }
+
+}
