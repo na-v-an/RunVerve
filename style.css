@@ -31,24 +31,15 @@ body {
     font-weight: bolder;
 }
 .toggle-button {
-    /* display: none; */
-    position: absolute;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 32px;
-    height: 21px;
+    display: none;
     cursor: pointer;
 }
 .toggle-button .bar {
-    display: none;
     height: 3px;
     width: 100%;
     background-color: white;
     border-radius: 10px;
 }
-/* .toggle-button a {
-    display: none;
-} */
 /* ---------------- LOGO ---------------- */
 .logo {
     width: 70px;
@@ -882,16 +873,20 @@ p {
         padding: 0;
         margin: 0 0 0 0px;
         position: absolute;
-    }
-    .nav-ul.active {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
         background-color: black;
         width: 100%;
         text-align: center;
     }
+    .nav-ul.active {
+        display: flex;
+        flex-direction: column;
+    }
     .toggle-button {
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 32px;
+        height: 21px; 
         display: flex;
         top: 1.6rem;
         right: 2rem;
@@ -1100,20 +1095,29 @@ p {
     }
 }
 
+/* ---------------- SCEEN WIDTH 375 MAX ---------------- */
 
-/* ---------------- SCEEN WIDTH 320 MAX ---------------- */
-
-@media (max-width: 320px) {
+@media (max-width: 375px) {
     body {
-        width: 320px;
+        width: 375px;
     }
     .navbar {
-        width: 320px;
+        width: 375px;
+    }
+    .nav-list {
+        padding: 0;
+        margin: 0;
     }
     .logotext {
         font-size: 24px;
+        margin: 20px 0 0 30px;
     }
-    .navb , .login , .logo {
+    .logo {
+        margin: 24px 0 0 20px;
+        width: 50px;
+        height: 50px;
+    }
+    .navb , .login {
         display: none;
     }
     .nav-ul {
@@ -1140,6 +1144,7 @@ p {
 /* ---------------- HOME SCREEN START ---------------- */
     .main {
         font-size: 14px;
+        margin-left: 80px;
     }
 
     .main span:first-child {
@@ -1188,7 +1193,7 @@ p {
     
     .box-container .card {
       position: relative;
-      width: 220px;
+      width: 250px;
       height: 320px;
     }
     .box-container .card .content .title {
@@ -1214,7 +1219,7 @@ p {
         width: 320px;
     }
     .advice .content-wrapper .messages {
-        margin: 0px 0 0 -18px;
+        margin: 0px 0 0 0px;
         padding: 20px 0;
     }
     .advice .top {
@@ -1230,19 +1235,19 @@ p {
     }
     /* ---------------- RUNNERS WITH DATA ---------------- */
     .container-d {
-        width: 320px;
+        width: 375px;
     }
     .data {
         margin: 20px; 
     }
     
     .data-img {
-        margin: 100px 0 0 0;
+        margin: 100px 0 0 40px;
         text-align: left;
     }
     .data-img h1 {
         font-size: 24px;
-        margin: 0 0 40px 60px;
+        margin: 0 0 40px 40px;
     }
     .data-img img {
         width: 300px;
@@ -1250,7 +1255,7 @@ p {
     }
     .data p {
         font-size: 14px;
-        margin: 40px 0 120px 20px;
+        margin: 40px 0 120px 50px;
     }
 
     /* ---------------- CONTACT US ---------------- */
@@ -1310,6 +1315,137 @@ p {
     }
     .contact-form h2 {
         font-size: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 280px;
+        margin: 0 0 15px 46px;
+    }
+    .contact-form button {
+        margin: 20px;
+    }
+
+}
+
+/* ---------------- SCEEN WIDTH 320 MAX ---------------- */
+
+@media (max-width: 320px) {
+    body {
+        width: 320px;
+    }
+    .navbar {
+        width: 320px;
+    }
+    .nav-list {
+        padding: 0;
+        margin: 0;
+    }
+    .logotext {
+        font-size: 24px;
+        margin: 20px 0 0 20px;
+    }
+    .logo {
+        margin: 20px 0 0 20px;
+        width: 50px;
+        height: 50px;
+    }
+/* ---------------- LOGO ---------------- */
+    
+/* ---------------- HOME SCREEN START ---------------- */
+    .main {
+        margin: 80px 0 0 50px;
+    }
+
+    /* ---------------- ABOUT US ---------------- */
+    
+    p {
+        margin-left: 0;
+        
+    }
+    /* ---------------- FEATURES ---------------- */
+    
+    /* ---------------- CAROUSEL CARDS ---------------- */
+
+    /* ---------------- RECEIVE PERSONALIZED RECOMMENDATIONS ---------------- */
+
+    .advice .content-wrapper .messages {
+        margin: 0px 0 0 -18px;
+    }
+    .advice .content-wrapper .messages .bubble {
+        margin: 0 15px 20px 10px;
+        font-size: 12px;
+        padding: 6px;
+    }
+    /* ---------------- RUNNERS WITH DATA ---------------- */
+    .container-d {
+        width: 320px;
+    }
+    .data-img h1 {
+        margin: 0 0 40px 50px;
+    }
+    .data-img {
+        margin: 100px 0 0 0;
+    }
+
+    .data-img img {
+        width: 300px;
+        height: 300px;
+    }
+    .data p {
+        margin: 40px 0 120px 20px;
+    }
+
+    /* ---------------- CONTACT US ---------------- */
+
+    
+    .container-e .contact img {
+        height: 40px;
+        width: 60px;
+        margin: 0 0 0 40px;
+    }
+    .container-e .contact span {
+        font-size: 24px;
+    }
+    .container-e .contact p {
+        margin: 0 0 0 50px; 
+        font-size: 12px;
+    }
+    .container-e sub {
+        margin: 0 0 0 50px;
+        font-size: 8px;
+    }
+    .container-e .contact hr {
+        width: 90%;
+    }
+    .container-e .contact ul {
+        margin: 20px;
+    }
+    .container-e .contact ul li {
+        font-size: 12px;
+    }
+    .container-e .contact ul li img {
+        height: 20px;
+        width: 20px;
+        margin: 0 10px 0 0;
+    }
+    .pol {
+        padding-top: 20px;
+    }
+    .pol span {
+        font-size: 12px !important;
+    }
+    /* ---------------- CONTACT FORM ---------------- */
+
+    .contact-form {
+        flex-direction: column;
+        width: 370px;
+        height: 360px !important;
+        padding: 30px 0 0 0;
+        margin: 60px 0 20px 0;
+    }
+    .contact-form h2 {
+        font-size: 20px !important;
     }
 
     .contact-form input,
