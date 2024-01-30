@@ -3,7 +3,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
+    overflow-x: hidden;
 }
+
+/* .navbar , .container-a , .container-o  */
+
+
 .navbar {
     width: 1440px;
     position: fixed;
@@ -378,9 +383,10 @@ p {
     /* ---------------- RUNNERS WITH DATA ---------------- */
     .container-d {
         display: flex;
-        margin: 0px 263px 200px 120px;
+        max-width: 1300px;
+        margin: 0 0 200px 120px ;
         padding: 0;
-        width: 1440px;
+        width: 100%;
         
     }
     .data {
@@ -623,7 +629,7 @@ p {
 /* ---------------- RUNNERS WITH DATA ---------------- */
     .container-d {
         margin: 0px 263px 200px 100px;
-        width: 1024px;
+        width: 900px;
         
     }
     .data {
@@ -788,7 +794,7 @@ p {
 
     .container-d {
         margin: 0 0 100px 70px;
-        width: 768px;
+        width: 680px;
         
     }
     .data {
@@ -1038,7 +1044,6 @@ p {
     .contact {
         margin: 0 0 20px 20px;
         padding-top: 80px;
-        /* order: 1; */
     }
     .container-e .contact img {
         height: 50px;
@@ -1266,7 +1271,6 @@ p {
     .contact {
         margin: 0;
         padding-top: 40px;
-        /* order: 1; */
     }
     .container-e .contact img {
         height: 40px;
@@ -1340,6 +1344,7 @@ p {
     .nav-list {
         padding: 0;
         margin: 0;
+        width: 320px;
     }
     .logotext {
         font-size: 24px;
@@ -1360,13 +1365,18 @@ p {
     /* ---------------- ABOUT US ---------------- */
     
     p {
-        margin-left: 0;
-        
+        margin-left: 0;   
     }
     /* ---------------- FEATURES ---------------- */
     
     /* ---------------- CAROUSEL CARDS ---------------- */
-
+    .owl-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        margin:0 0 0 3px; 
+    }
     /* ---------------- RECEIVE PERSONALIZED RECOMMENDATIONS ---------------- */
 
     .advice .content-wrapper .messages {
@@ -1379,7 +1389,7 @@ p {
     }
     /* ---------------- RUNNERS WITH DATA ---------------- */
     .container-d {
-        width: 320px;
+        width: 310px;
     }
     .data-img h1 {
         margin: 0 0 40px 50px;
@@ -1439,8 +1449,8 @@ p {
 
     .contact-form {
         flex-direction: column;
-        width: 370px;
-        height: 360px !important;
+        width: 318px;
+        height: 320px !important;
         padding: 30px 0 0 0;
         margin: 60px 0 20px 0;
     }
@@ -1450,8 +1460,8 @@ p {
 
     .contact-form input,
     .contact-form textarea {
-        width: 280px;
-        margin: 0 0 15px 46px;
+        width: 260px;
+        margin: 0 0 15px 30px;
     }
     .contact-form button {
         margin: 20px;
