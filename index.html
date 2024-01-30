@@ -7,13 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <!-- <link href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet"> -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script>
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
 
     
     <!-- <script src="script.js"></script> -->
@@ -22,7 +19,7 @@
 <body>
   <!---------------- NAVBAR ---------------->
     <nav class="navbar">
-        <ul>
+        <ul class="nav-list">
             <li class="logo"><a href="#run"><img src="assets/logo.png" alt="logo"></a></li>
             <li class="logotext"><a href="#run" style="margin: 0;"><span class="t">RUN VERVE</span></a></li>
             <li class="navb"><a href="#about">About</a></li>
@@ -32,7 +29,7 @@
             <li class="navb"><a href="#contact">Contact us</a></li>
             <li><button class="login"><a href="#">Login</a></button></li>
             <li>
-              <a href="#" class="toggle-button" onclick="toggleMenu()">
+              <a href="#" class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -51,22 +48,29 @@
         </div>
     </nav>
   <!---------------- NAVBAR ---------------->
+
   <script>
-    function toggleMenu() {
-      var navUl = document.querySelector('.nav-ul');
-      navUl.classList.toggle('active')
-    }
+    $(document).ready(function() {
+      // Define the toggleMenu function
+      function toggleMenu() {
+        $(".nav-ul").toggleClass("active");
+      }
+  
+      // Attach the toggleMenu function to the click event of the toggle button
+      $(".toggle-button").click(function(e) {
+        e.preventDefault();
+        toggleMenu();
+      });
+    });
   </script>
   <!-- <script>
-    document.addEventListener('DOMContentLoaded',function() {
-      const toggleButton = document.querySelector('.toggle-button');
-      const navUl = document.querySelector('.nav-ul');
-
-      toggleButton.addEventListener('click', function () {
-        navUl.style.display = (navUl.style.display == 'block') ? 'none' : 'block';
+    $(document).ready(function() {
+      $(".toggle-button").click(function() {
+        $(".nav-ul").toggleClass("active");
       });
     });
   </script> -->
+
     <!---------------- JS FOR SCROLLING ON CLICK NAV ---------------->
 
     <script>
@@ -75,8 +79,9 @@
               event.preventDefault();
   
               var target = this.hash;
+              console.log('Target:', target)
               var $target = $(target);
-  
+              console.log('$target:', $target);
               $('html, body').animate({
                   'scrollTop': $target.offset().top
               }, 500, 'swing');
@@ -97,7 +102,7 @@
         </div>
     </div>
     <!---------------- INF CAROUSEL  ---------------->
-    
+
     <div class="owl-carousel owl-theme owl-loaded owl-drag">
             
       <div class="owl-stage-outer">
@@ -127,9 +132,9 @@
         </div>
       </div>
     </div>
+
+      
   <!---------------- SCRIPTS for autoslider ---------------->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script> -->
 
   <script>
     $(document).ready(function() {
@@ -199,7 +204,6 @@
         </div>
         <div class="main-img1">
             <img class="main-img1-run" src="assets/gifs/Video.Guru_20240122_160808959.gif" alt="bro">
-            <!-- <hr class="horizontal-line" style="border: 2px solid rgba(0, 0, 0, 0.253); margin: 0 0 0 80px; width: 400px;"> -->
         </div>
     
     </div>
@@ -343,6 +347,7 @@
       </div>
     </div>
   </div>
+  <!---------------- TEXT MESSAGES ANIMATION SCRIPT ---------------->
   <script>
     $(document).ready(function() {
         function animateMessages() {
@@ -427,12 +432,6 @@
           <div class="send"><button type="submit">Send</button></div>
       </form>
     </div>
-</div>
-      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-      <!-- <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script> -->
-      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit.min.js"></script> -->
-      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.3/js/uikit-icons.min.js"></script> -->
-      
-    
+  </div>   
 </body>
 </html>
