@@ -481,7 +481,7 @@ p {
 
     .contact-form input,
     .contact-form textarea {
-        width: 320px;
+        width: 300px;
         margin-left: 32px;
         padding: 10px;
         margin-bottom: 15px;
@@ -674,7 +674,7 @@ p {
     }
     .contact-form input,
     .contact-form textarea {
-        width: 300px;
+        width: 280px;
     }
     
 
@@ -840,13 +840,16 @@ p {
 
     .contact-form {
         width: 300px;
-        height: 340px;
+        height: 380px;
         margin: 0 0 0 40px;
     }
-    .contact-form input,
+    .contact-form input {
+        width: 200px;
+        height: 18px;
+    }
     .contact-form textarea {
-        width: 250px;
-        height: 35px;
+        height: 50px;
+        width: 200px;
     }
     
 }
@@ -1081,8 +1084,8 @@ p {
 
     .contact-form {
         flex-direction: column;
-        width: 370px;
-        height: 360px !important;
+        width: 340px;
+        height: 400px !important;
         padding: 40px 0 0 0;
         margin: 60px 0 20px 0;
     }
@@ -1092,8 +1095,8 @@ p {
 
     .contact-form input,
     .contact-form textarea {
-        width: 280px;
-        margin: 0 0 15px 46px;
+        width: 240px;
+        margin: 0 0 15px 42px;
     }
     .contact-form button {
         margin: 20px;
@@ -1312,7 +1315,7 @@ p {
 
     .contact-form {
         flex-direction: column;
-        width: 370px;
+        width: 300px;
         height: 360px !important;
         padding: 40px 0 0 0;
         margin: 60px 0 20px 0;
@@ -1321,10 +1324,15 @@ p {
         font-size: 20px;
     }
 
-    .contact-form input,
+    .contact-form input {
+        width: 210px;
+        height: 10px;
+        margin: 0 0 15px 38px;
+    }
     .contact-form textarea {
-        width: 280px;
-        margin: 0 0 15px 46px;
+        height: 40px;
+        width: 210px;
+        margin: 0 0 15px 38px;
     }
     .contact-form button {
         margin: 20px;
@@ -1449,8 +1457,8 @@ p {
 
     .contact-form {
         flex-direction: column;
-        width: 318px;
-        height: 320px !important;
+        width: 260px;
+        height: 340px !important;
         padding: 30px 0 0 0;
         margin: 60px 0 20px 0;
     }
@@ -1460,8 +1468,8 @@ p {
 
     .contact-form input,
     .contact-form textarea {
-        width: 260px;
-        margin: 0 0 15px 30px;
+        width: 190px;
+        margin: 0 0 15px 28px;
     }
     .contact-form button {
         margin: 20px;
