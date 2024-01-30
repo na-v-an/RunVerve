@@ -79,12 +79,10 @@
               event.preventDefault();
   
               var target = this.hash;
-              console.log('Target:', target)
               var $target = $(target);
-              console.log('$target:', $target);
               $('html, body').animate({
                   'scrollTop': $target.offset().top
-              }, 500, 'swing');
+              }, 800, 'swing');
           });
       });
     </script>
