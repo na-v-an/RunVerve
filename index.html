@@ -37,40 +37,16 @@
               </a>
             </li>
         </ul>
-        <div class="nav-ul">
-          <ul>
-            <li class="navb"><a href="#about">About</a></li>
-            <li class="navb"><a href="#features">Features</a></li>
-            <li class="navb"><a href="#users">Users</a></li>
-            <li class="navb"><a href="#coach">Verve Coach</a></li>
-            <li class="navb"><a href="#contact">Contact us</a></li>
-            <li><button class="login"><a href="#">Login</a></button></li>
-          </ul>
-        </div>
     </nav>
-  <!---------------- NAVBAR ---------------->
+  <!---------------- NAVBAR TOGGLE BUTTON ---------------->
 
   <script>
     $(document).ready(function() {
-      // Define the toggleMenu function
-      function toggleMenu() {
-        $(".nav-ul").toggleClass("active");
-      }
-  
-      // Attach the toggleMenu function to the click event of the toggle button
-      $(".toggle-button").click(function(e) {
-        e.preventDefault();
-        toggleMenu();
+      $(".toggle-button").click(function() {
+        $(".navbar").toggleClass("active");
       });
     });
   </script>
-  <!-- <script>
-    $(document).ready(function() {
-      $(".toggle-button").click(function() {
-        $(".nav-ul").toggleClass("active");
-      });
-    });
-  </script> -->
 
     <!---------------- JS FOR SCROLLING ON CLICK NAV ---------------->
 
@@ -81,12 +57,19 @@
   
               var target = this.hash;
               var $target = $(target);
-              $('html, body').animate({
-                  'scrollTop': $target.offset().top
-              }, 800, 'swing');
+  
+              // To check if the target element exists
+              if ($target.length) {
+                  var scrollDuration = 800;
+  
+                  $('html, body').animate({
+                      'scrollTop': $target.offset().top
+                  }, scrollDuration, 'swing');
+              }
           });
       });
-    </script>
+  </script>
+  
     <!---------------- RUN VERVE LANDING SCREEN ---------------->
     <div class="container-a" id="run">
         <div class="main">
