@@ -891,13 +891,18 @@ p {
     .navbar.active {
         flex-direction: column;
     }
+
     .navbar.active .nav-list {
         display: flex;
         flex-direction: column;
     }
     .navbar.active .navb {
         display: flex;
+        padding: 20px;
+        margin: 0;
+        transition: all 0.6s ease;
     }
+
 
     /* ---------------- LOGO ---------------- */
     
@@ -1109,6 +1114,7 @@ p {
         width: 375px;
     }
     .nav-list {
+        height: auto;
         padding: 0;
         margin: 0;
     }
